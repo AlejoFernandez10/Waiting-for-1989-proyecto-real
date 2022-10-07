@@ -1,0 +1,47 @@
+
+
+
+/* FOOTER GENERAL */
+.footer-container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,1fr);
+    color:#ddd ;
+    background-color: $colorPrincipal;
+    margin-top: auto;
+    padding: 20px;
+
+    font-size: map-get($fontSizes, footerItems);
+
+    .links-condiciones{@include flex(column, center, center);margin-top: 20px}
+
+
+    .footer__contacto{
+        @include flex(column, center, center);
+        margin-top: 50px;
+        font-size: map-get($fontSizes, footerItems);
+        
+        h4{
+            font-size: map-get($fontSizes, footerTitles);
+        }
+    }
+    .footer__seguinos{
+        max-width: 150px;
+        display: flex;
+        @include flex(column, center, center);
+
+        .footer__seguinos-title{
+            margin-top:5px;
+            font-size: map-get($fontSizes, footerTitles);
+        }
+    }
+
+    .footer__span-suelto{text-align: center;}
+    .footer__span-suelto3{text-align: center;}
+
+    span a{
+        color: #ddd;
+        padding: 3px;
+    }
+}

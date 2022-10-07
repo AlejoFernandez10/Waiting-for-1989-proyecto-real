@@ -1,0 +1,94 @@
+.inicio-section {
+  height: 115vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(../assets/index-background.jpg) no-repeat center center ;
+  background-size: cover;
+
+  .header{
+
+    @include flex(row,center,center);
+
+    height: 5.5em;
+    width: 100%;
+    background-color: #000;
+    z-index: 50;
+    margin-bottom: 20px;
+    position: fixed;
+
+    .nav-container {
+      @include flex(row,space-between,center);
+        width: 1000px;
+
+        .logo{
+            img {
+                height: 5.5em;
+                width: 140px;
+              }
+        } 
+
+        .nav__list {
+            list-style: none;
+            @include flex(row,center,center);
+
+            .nav__list-item{
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    margin-right: 12px;
+                    margin-left: 12px;
+                    font-size: 20px;
+                    position: relative;
+                    top: 7px;
+
+                    &:hover{
+                      font-size: 25px;
+                      transition: .5s;
+                      margin-right: 0;
+                      margin-left: 0;
+                    }
+                  }
+
+                  
+            }
+          }
+
+
+      }
+
+    .navbar{
+        display: none;
+    }
+ 
+  }
+  .titulo-principal{
+
+    @include flex(row,center,center);
+
+    height: 100vh;
+    color: #eee;
+
+    h1{
+      font-size: 120px;
+      text-align: center;
+      
+      animation:  aparicion 1.5s 1 ;
+      transform: translateY(0);
+      transition: 1.5s;         
+  }
+  
+  @keyframes aparicion{
+      from {transform: translateX(-1000px);}
+  
+  } 
+    
+  }
+
+}
+
+
+.separador{
+  width: 100%;
+  height: 15rem;
+  background-color: #000;
+}
+
