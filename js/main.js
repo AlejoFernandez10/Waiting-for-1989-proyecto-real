@@ -1,4 +1,4 @@
-let animado = document.querySelectorAll(`.animado`);
+/* let animado = document.querySelectorAll(`.animado`);
 
 const mostrar = () =>{
     let scrollTop = document.documentElement.scrollTop;
@@ -10,4 +10,4 @@ const mostrar = () =>{
 
         }
     };
-}
+} */
