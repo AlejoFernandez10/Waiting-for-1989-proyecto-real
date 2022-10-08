@@ -1,11 +1,11 @@
-@import "./sass/variables";
+@import "./sass/_variables";
 @import "./sass/_reset";
 @import "./sass/_mixins";
-@import "./sass/_meadiaqueries";
+@import "./sass/_mediaqueries";
 
 
  /*----- SECTIONS -------*/ 
 @import "./sass/secciones-sass/_inicio";
 @import "./sass/secciones-sass/_productos";
-@import "./sass/secciones-sass/contactos";/*
-@import "./sass/_footer.scss"; */
+@import "./sass/secciones-sass/_contactos";
+@import "./sass/_footer.scss"; 

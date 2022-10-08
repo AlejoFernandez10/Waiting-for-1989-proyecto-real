@@ -1,0 +1,302 @@
+//----- INICIO ----
+
+@media screen and (max-width:1000px){
+    .index-body{
+        .inicio-section{
+            .header{
+                .nav-container{
+                    @include flex(row, space-between ,center);
+                }
+            }
+        }
+    }
+    
+}
+
+
+/* Index */
+@media screen and (max-width:720px){
+    .index-body{
+        .inicio-section{
+
+                .titulo-principal {
+                    h1{
+                        font-size: 100px;  
+                    }
+                    
+                }
+    
+                .nav-container{
+                    .nav__list{
+                        .nav__list-item{
+                            a{
+                                font-size: map-get($fontSizes ,navItems)
+                            }
+                        }
+                    }
+    
+                }
+             
+
+        }
+               
+    }
+    
+    
+     
+}
+
+@media screen and (max-width:650px){
+    .index-body{
+        .inicio-section{
+            .header{
+                .nav-container{
+                    display: none;                
+                }
+                .navbar{display: inline-block;}
+            }
+            
+        }
+    }
+}
+
+
+@media screen and (max-width:552px){
+    .index-body{
+        .inicio-section{
+            .titulo-principal {
+                h1{
+                    font-size: 50px; 
+                }
+                 
+            }
+
+        }
+        .productos-section{
+            #productos__title{
+                font-size: 45px;
+                transition: 1s;
+            }
+        }
+            
+               
+    }
+
+}
+
+@media screen and (max-width:450px){
+    .index-body{
+        .footer-container{
+            grid-template-columns: 1fr;
+            .footer__seguinos{
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* Productos */
+
+
+@media screen and (max-width:924px){
+    .index-body .productos-section .productos-container .productos-center-alignment .productos-item-grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    
+    .index-body .productos-section .photo-slider .carousel{
+            height: 25em;
+        }
+}
+
+
+@media screen and (max-width:650px){
+    .header{
+         position: fixed;       
+        .nav-container{
+            display: none;
+        }
+
+        .navbar{
+            display: inline-block;
+            margin-top: 0px;
+            margin-right:25px ;
+    
+            .container-fluid{
+                .navbar-brand{
+                    margin-left: 15px;
+                    img{
+                        height: 3.1em;
+                    }            
+                }
+            }   
+        }  
+    }
+
+    .index-body{
+        .productos-section{
+            .productos-container{
+                .photo-slider{
+                    margin-top: 92px;
+                }
+            
+                .productos-center-alignment{
+                    
+                    display: flex;
+                    flex-direction: column;
+            
+                    
+                    .productos-item-grid{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr ;
+                        
+            
+                        .productos-item{
+                            height: 340px;
+                            width: 220px;
+                            transition: 1s;
+
+                            .precio-padding{
+                                padding-bottom: 20px;
+                            }
+                            .carousel{
+                                .carousel-inner{
+                                    
+                                    .carousel-item{
+                                        
+                                        .img{
+                                            height: 220px;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                            .img{
+                                height: 220px;
+                            }
+                        }
+                        
+                    }
+                }
+            
+            }
+        }
+    }
+
+  
+    
+    
+
+}
+
+
+
+@media screen and (max-width:480px){
+
+    .index-body{
+        .productos-section{
+            .productos-container{
+                .productos-center-alignment{
+        
+                    .productos-item-grid{
+                        grid-template-columns: 1fr;
+                
+                    }
+                
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+
+
+/* CONTACTO */
+
+@media screen and (max-width:680px){
+
+    .index-body{
+        .contacto-section{
+            .contacto-main-container{
+                .contacto-center-div{
+                    .form-img-div{
+                        display: flex;
+                        flex-direction: column-reverse;
+                        
+                        .contacto-form-container{
+                            width: 90%;
+                        }
+                    }        
+                    
+        
+                    .contacto-image{
+                        width: 90%;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                
+            } 
+        }
+    }
+    
+}
+
+@media screen and (max-width:500px){
+
+    .index-body{
+        .contacto-section{
+            .contacto-main-container{
+                .contacto-center-div{
+                    .form-img-div{
+                        display: flex;
+                        flex-direction: column-reverse;
+                        
+                        .contacto-form-container{
+                            h2{font-size: 35px;}
+
+                            .contacto-form{
+                                .mb-3{
+
+                                    .form-control{height: 2.3em;}
+                                    .form-label{font-size: 15px; margin-left:15% ;}
+                                    .text-area{height: 10em;}
+                                }
+                            }
+                        }
+                    }
+                }    
+        } 
+    }
+    
+}
+
+}
+
+@media screen and (max-width:320px){
+    .contacto-main-container{
+        .contacto-form-container{
+
+            .contacto-form{
+                .mb-3{
+                    .form-label{font-size: 12px;}
+                }
+            }
+        }
+    } 
+}    
+     
+
+
+
+
+

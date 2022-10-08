@@ -6,7 +6,7 @@
     width: 100%;
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     color:#ddd ;
     background-color: $colorPrincipal;
     margin-top: auto;
@@ -14,31 +14,34 @@
 
     font-size: map-get($fontSizes, footerItems);
 
-    .links-condiciones{@include flex(column, center, center);margin-top: 20px}
 
 
     .footer__contacto{
-        @include flex(column, center, center);
+        @include flex(column, center, flex-start);
         margin-top: 50px;
-        font-size: map-get($fontSizes, footerItems);
         
+        font-size: map-get($fontSizes, footerItems);
+
         h4{
             font-size: map-get($fontSizes, footerTitles);
+            margin-bottom: 10px;
         }
     }
     .footer__seguinos{
         max-width: 150px;
+        margin-top: 50px;
         display: flex;
-        @include flex(column, center, center);
+        @include flex(column, center, flex-start);
+
 
         .footer__seguinos-title{
-            margin-top:5px;
+            margin-bottom: 10px;
             font-size: map-get($fontSizes, footerTitles);
         }
     }
 
-    .footer__span-suelto{text-align: center;}
-    .footer__span-suelto3{text-align: center;}
+    .footer__span-suelto{text-align: center;position: relative;margin-top: 15px;}
+    .footer__span-suelto3{text-align: center;position: relative;margin-top: 15px;}
 
     span a{
         color: #ddd;

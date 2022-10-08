@@ -72,12 +72,14 @@
       text-align: center;
       
       animation:  aparicion 1.5s 1 ;
-      transform: translateY(0);
+      transform: translateX(0) translateY(0);
       transition: 1.5s;         
   }
   
   @keyframes aparicion{
-      from {transform: translateX(-1000px);}
+      from {transform:  translateX(-1000px) translateY(-1000px);}
+      
+      
   
   } 
     
